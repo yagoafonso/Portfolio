@@ -1,8 +1,8 @@
 import { Navbar } from './components/Navbar/Navbar'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import { Home } from './pages/Home'
-import { Button } from './components/Button/Button'
+import { Home } from './pages/Home/Home'
 import GlobalStyle from './global'
+import { About } from './pages/About/About'
 
 function App() {
 
@@ -18,10 +18,10 @@ function App() {
       </Routes>
     </Router>
     <Home>
-      <Button>
-        Ola
-      </Button>
     </Home>
+    <About>
+
+    </About>
     </>
   )
 }

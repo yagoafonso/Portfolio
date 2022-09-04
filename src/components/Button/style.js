@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const ButtonContainer = styled.button`
-    /* display: flex;
-    justify-content: space-evenly; */
     width: 140px;
     border-radius: 8px;
     margin-top: 1rem;

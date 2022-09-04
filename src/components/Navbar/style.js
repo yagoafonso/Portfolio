@@ -67,7 +67,7 @@ export const Logo = styled.div`
     margin: 25px;
     max-width: 180px;
     height: auto;
-    color: blueviolet;
+    color: var(--blueviolet-800);
     white-space: nowrap;
 `;
 export const OpensLinksButton = styled.button`

@@ -14,7 +14,7 @@ export const ContentImgAbout = styled.div`
     width: 20rem;
     height: 20rem;
     border-radius: 10px;
-    box-shadow: -4px 4px var(--blueviolet-300)
+    box-shadow: -4px 4px black;
   }
 `
 export const ContentTextAbout = styled.div`
@@ -30,5 +30,51 @@ export const ContentTextAbout = styled.div`
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 2rem;
+    span{
+      color: var(--blueviolet-300);
+    }
+  }
+  p{
+    text-align: justify;
+    strong{
+      color: var(--blueviolet-300);
+    }
+  }
+`
+
+export const ContainerSocial = styled.div`
+  padding: 20px;
+  h2{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  p{
+    text-align: center;
+  }
+`
+export const ContainerSocialIcon = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+`
+export const SocialIcon = styled.div`
+  width: 40px;
+  height: 40px;
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background: var(--white);
+  cursor: pointer;
+  svg{
+    width: 25px;
+    height: 25px;
+  }
+
+  :hover {
+  color: #87209e;
+  box-shadow: 0 0 10px var(--blueviolet-800);
   }
 `

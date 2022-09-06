@@ -1,6 +1,6 @@
 import React from "react";
 import { Typewriter } from 'react-simple-typewriter'
-import homeLogo from "../../assets/home-main.svg"
+import  homeLogo  from "../../assets/home-main.svg"
 import { 
     ContainerHome,
     ContentShow,

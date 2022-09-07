@@ -36,6 +36,7 @@ export const ContentTextAbout = styled.div`
   }
   p{
     text-align: justify;
+    line-height: 1.5rem;
     strong{
       color: var(--blueviolet-300);
     }
@@ -50,6 +51,7 @@ export const ContainerSocial = styled.div`
   }
   p{
     text-align: center;
+
   }
 `
 export const ContainerSocialIcon = styled.div`
@@ -71,6 +73,8 @@ export const SocialIcon = styled.div`
   svg{
     width: 25px;
     height: 25px;
+    color:var(--blueviolet-800);
+
   }
 
   :hover {

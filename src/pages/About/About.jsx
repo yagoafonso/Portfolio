@@ -24,13 +24,13 @@ export function About(){
           <h2>Me encontre em</h2>
           <p>Sinta-se à vontade para se conectar comigo.</p>
           <ContainerSocialIcon>
-            <SocialIcon>
+            <SocialIcon title="Github">
               <a 
                 href="https://github.com/yagoafonso" target="_blank">
               <AiFillGithub />
               </a>              
             </SocialIcon>
-            <SocialIcon>
+            <SocialIcon title="Linkedin">
               <a href="https://www.linkedin.com/in/yago-afonso/" target="_blank">
               <FaLinkedinIn />
               </a>              

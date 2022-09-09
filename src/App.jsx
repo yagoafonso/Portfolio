@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import { Home } from './pages/Home/Home'
 import GlobalStyle from './global'
 import { About } from './pages/About/About'
+import { Projects } from './pages/Projects/Projects'
 
 function App() {
 
@@ -20,8 +21,9 @@ function App() {
     <Home>
     </Home>
     <About>
-
     </About>
+    <Projects>      
+    </Projects>
     </>
   )
 }

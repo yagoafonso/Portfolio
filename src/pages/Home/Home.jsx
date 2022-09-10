@@ -26,7 +26,7 @@ export function Home() {
                 </h1>
             </ContentShow>
             <ContentImg>
-                <img src={homeLogo} alt="" />
+                <img src={homeLogo} alt="Imagem pessoa sentada em frente ao computador." />
             </ContentImg>
         </ContainerHome>
     );

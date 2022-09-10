@@ -6,12 +6,12 @@ export const NavbarContainer = styled.nav`
     width: 100%;
     height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
     background-color: var(--gray-900);
-    opacity: 0.9;
     display:  flex;
     flex-direction: column;
     top: 0;
-    position: fixed;
-
+    position: sticky;
+    z-index: 1;
+    border-bottom: 1px solid var(--blueviolet-800);
 
     @media (min-width: 700px) {
         height: 80px;

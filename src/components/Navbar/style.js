@@ -5,9 +5,13 @@ import { Link } from 'react-router-dom'
 export const NavbarContainer = styled.nav`
     width: 100%;
     height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
-    background-color: black;
+    background-color: var(--gray-900);
+    opacity: 0.9;
     display:  flex;
     flex-direction: column;
+    top: 0;
+    position: fixed;
+
 
     @media (min-width: 700px) {
         height: 80px;

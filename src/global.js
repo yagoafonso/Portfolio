@@ -15,7 +15,7 @@ export default createGlobalStyle `
     --blueviolet-500: #8a2be2;
     --blueviolet-800: #6f1abd;
 
-
+    --black-900: #000000;
     --red-500: #F75A68;
 
 
@@ -27,6 +27,7 @@ export default createGlobalStyle `
     box-sizing: border-box;
 }
 body{
+    background: var(--gray-900);
     color: var(--white);
     -webkit-font-smoothing: antialiased;
 }

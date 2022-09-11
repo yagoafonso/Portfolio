@@ -60,7 +60,7 @@ export const ContainerSocialIcon = styled.div`
   justify-content: center;
   gap: 10px;
 `
-export const SocialIcon = styled.div`
+export const SocialIcon = styled.a`
   width: 40px;
   height: 40px;
   display: flex;

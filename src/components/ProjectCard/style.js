@@ -16,6 +16,9 @@ export const CardImg = styled.img`
   height: 15rem;
   object-fit: cover;
   margin-top: 20px;
+  border-radius: 8px;
+  border: 4px solid var(--gray-900);
+  outline: 1px solid var(--blueviolet-800);
 `
 export const CardTitle = styled.h3`
   font-size: 1.5rem;

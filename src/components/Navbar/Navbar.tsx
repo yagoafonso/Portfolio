@@ -37,7 +37,7 @@ export function Navbar() {
                     </NavbarLinkContainer>
                 </LeftContainer>
                 <RightContainer>
-                    <Logo>Yago Afonso</Logo>
+                    <Logo>&lsaquo;Yago Afonso/&rsaquo;</Logo>
                 </RightContainer>
             </NavbarInnerContainer>
             { extendNavbar && (

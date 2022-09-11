@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 export const ContainerAbout = styled.section`
-  background: var(--gray-700);
+  background: var(--gray-900);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5rem;
-  min-height: 35vh;
+  height: 86.5vh;
   gap: 30px;
 `
 export const ContentImgAbout = styled.div`

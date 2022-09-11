@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export const NavbarContainer = styled.nav`
     width: 100%;
-    height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
+    height: ${(props) => (props.extendNavbar ? "100vh" : "15vh")};
     background-color: var(--gray-900);
     display:  flex;
     flex-direction: column;
@@ -46,10 +46,16 @@ export const NavbarLinkContainer = styled.div`
 
 export const NavbarLink = styled(Link)`
     color: white;
-    font-size: large;
+    font-size: 1.25rem;
+    font-weight: 700;
     font-family: Roboto, Helvetica, sans-serif;
     text-decoration: none;
     margin: 10px;
+    transition: 0.2s;
+
+    :hover {
+        color: var(--blueviolet-800);
+    }
 
     @media (max-width: 700px) {
     display: none;
@@ -58,7 +64,8 @@ export const NavbarLink = styled(Link)`
 
 export const NavbarLinkExtend = styled(Link)`
     color: white;
-    font-size: large;
+    font-size: 1.5rem;
+    font-weight: 700;
     font-family: Roboto, Helvetica, sans-serif;
     text-decoration: none;
     margin: 10px;
@@ -66,13 +73,18 @@ export const NavbarLinkExtend = styled(Link)`
 
 export const Logo = styled.div`
     color: white;
-    font-size: x-large;
+    font-size: 1.5rem;
     font-family: Roboto, Helvetica, sans-serif;
     margin: 25px;
     max-width: 180px;
     height: auto;
     color: var(--blueviolet-800);
     white-space: nowrap;
+    cursor: pointer;
+
+    :hover {
+        color: var(--blueviolet-300);
+    }
 `;
 export const OpensLinksButton = styled.button`
     width: 80px;

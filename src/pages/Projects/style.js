@@ -6,6 +6,7 @@ export const ContainerProjects = styled.div`
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
+  margin-bottom: 50px;
 `
 export const ProjectTitle = styled.h1`
     font-weight: 700;

@@ -11,19 +11,22 @@ export function Home() {
     return (
         <ContainerHome>
             <ContentShow>
-                <h1>Olá, sou<br/>
-                <strong>Yago Afonso</strong><br/>
-                <span style={{ color: 'var(--blueviolet-500)', fontWeight: '700' }}>
-                    <Typewriter
-                        words={['Desenvolvedor Front-End.']}
-                        cursor
-                        cursorStyle='|'
-                        typeSpeed={100}
-                        deleteSpeed={50}
-                        delaySpeed={100}                
-                    />
-                </span>
-                </h1>
+                <div>
+                    <h1>Olá, eu sou </h1>
+                    <h1><strong>Yago Afonso</strong></h1>              
+                </div>
+                <div>
+                    <span style={{ color: 'var(--blueviolet-500)', fontWeight: '700', fontSize: '2rem' }}>
+                        <Typewriter
+                            words={['Desenvolvedor Front-End.']}
+                            cursor
+                            cursorStyle='|'
+                            typeSpeed={100}
+                            deleteSpeed={50}
+                            delaySpeed={100}                
+                        />
+                    </span>
+                </div>
             </ContentShow>
             <ContentImg>
                 <img src={homeLogo} alt="Imagem pessoa sentada em frente ao computador." />

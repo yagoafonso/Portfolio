@@ -32,7 +32,7 @@ export function Navbar() {
                             }}
                         
                         >                            
-                            {extendNavbar ? <>&#10005;</> : <> &#8801;</>}
+                            {extendNavbar ? <> &#10005;</> : <> &#8801;</>}
                         </OpensLinksButton>
                     </NavbarLinkContainer>
                 </LeftContainer>
@@ -43,7 +43,7 @@ export function Navbar() {
             { extendNavbar && (
                 <NavbarExtendContainer>
                     <NavbarLinkExtend to="/">Home</NavbarLinkExtend>
-                    <NavbarLinkExtend to="/products" >Projetos</NavbarLinkExtend>
+                    <NavbarLinkExtend to="/projects" >Projetos</NavbarLinkExtend>
                     <NavbarLinkExtend to="/about" >Sobre</NavbarLinkExtend>
                 </NavbarExtendContainer>
             )}

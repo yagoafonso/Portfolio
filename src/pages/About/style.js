@@ -8,6 +8,9 @@ export const ContainerAbout = styled.section`
   padding: 5rem;
   height: 86.5vh;
   gap: 30px;
+  @media (max-width: 860px) {
+    flex-direction: column;
+  }
 `
 export const ContentImgAbout = styled.div`
   img{
@@ -41,6 +44,9 @@ export const ContentTextAbout = styled.div`
       color: var(--blueviolet-300);
     }
   }
+  @media (max-width: 860px) {
+    align-items: center;
+  }
 `
 
 export const ContainerSocial = styled.div`
@@ -48,6 +54,9 @@ export const ContainerSocial = styled.div`
   h2{
     text-transform: uppercase;
     margin-bottom: 10px;
+    @media (max-width: 860px) {
+      text-align: center;
+  }
   }
   p{
     text-align: center;

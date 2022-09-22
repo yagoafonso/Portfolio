@@ -24,4 +24,9 @@ export const ContainerProjectCards = styled.div`
   gap: 30px;
   max-width: 1020px;
   margin-top: 50px;
+
+  @media (max-width: 1035px) {
+      align-items: center ;
+      justify-content: center ;
+    }
 `

@@ -17,6 +17,10 @@ export const ProjectTitle = styled.h1`
 `
 export const ContainerText = styled.p`
     font-size: 1.25rem;
+    
+    @media (max-width: ${breakpoints.device.laptop}) {
+      text-align: center ;
+    }
 `
 
 export const ContainerProjectCards = styled.div`

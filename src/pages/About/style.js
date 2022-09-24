@@ -13,7 +13,7 @@ export const ContainerAbout = styled.section`
     flex-direction: column;
     justify-content: flex-start;
     margin-top: 30px;
-    height: 85vh;
+    height: 95vh;
     padding: 0;
   }
 `

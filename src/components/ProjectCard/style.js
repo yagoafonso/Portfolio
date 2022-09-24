@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "../../breakpoints";
 
 export const ContainerProjectCard = styled.div`
   width: 20rem;

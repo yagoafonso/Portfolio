@@ -1,6 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "1.0.0",
+  "homepage": "https://yagoafonso.github.io/yagoafonso.github.io",
   "type": "module",
   "scripts": {
     "start": "npm run dev",

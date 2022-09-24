@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import breakpoints from '../../breakpoints'
 
 export const ContainerAbout = styled.section`
   background: var(--gray-900);
@@ -8,8 +9,12 @@ export const ContainerAbout = styled.section`
   padding: 5rem;
   height: 86.5vh;
   gap: 30px;
-  @media (max-width: 860px) {
+  @media (max-width: ${breakpoints.device.tablet}) {
     flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 30px;
+    height: 85vh;
+    padding: 0;
   }
 `
 export const ContentImgAbout = styled.div`
@@ -21,7 +26,7 @@ export const ContentImgAbout = styled.div`
   }
 `
 export const ContentTextAbout = styled.div`
-  width: 30rem;
+  width: 20rem;
   height: 20rem;
   display: flex;
   flex-direction: column;
@@ -44,7 +49,7 @@ export const ContentTextAbout = styled.div`
       color: var(--blueviolet-300);
     }
   }
-  @media (max-width: 860px) {
+  @media (max-width: ${breakpoints.device.tablet}) {
     align-items: center;
   }
 `
@@ -54,9 +59,9 @@ export const ContainerSocial = styled.div`
   h2{
     text-transform: uppercase;
     margin-bottom: 10px;
-    @media (max-width: 860px) {
+    @media (max-width: ${breakpoints.device.tablet}) {
       text-align: center;
-  }
+    }
   }
   p{
     text-align: center;
@@ -83,9 +88,7 @@ export const SocialIcon = styled.a`
     width: 25px;
     height: 25px;
     color:var(--blueviolet-800);
-
   }
-
   :hover {
   color: #87209e;
   box-shadow: 0 0 10px var(--blueviolet-800);

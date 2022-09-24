@@ -16,7 +16,7 @@ export function Home() {
                     <h1><strong>Yago Afonso</strong></h1>              
                 </div>
                 <div>
-                    <span style={{ color: 'var(--blueviolet-500)', fontWeight: '700', fontSize: '2rem' }}>
+                    <span>
                         <Typewriter
                             words={['Desenvolvedor Front-End.']}
                             cursor

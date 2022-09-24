@@ -17,10 +17,7 @@ export default createGlobalStyle `
 
     --black-900: #000000;
     --red-500: #F75A68;
-
-
 }
-
 *{
     padding: 0;
     margin: 0;

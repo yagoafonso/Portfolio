@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import breakpoints  from '../../breakpoints';
 
 export const ContainerHome = styled.section`
   background: var(--gray-900);
@@ -7,18 +8,20 @@ export const ContainerHome = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (max-width: 760px) {
+
+  @media (max-width: ${breakpoints.device.tablet}) {
       flex-direction: column;
   }
 `
 export const ContentShow = styled.div`
-  width: 37rem;
-  height: 37rem;
+  width: 35rem;
+  height: 35rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+
   div{
     display: flex;
     flex-direction: column;
@@ -26,44 +29,47 @@ export const ContentShow = styled.div`
     gap: 1rem;
   }
   h1{
-    line-height: 3rem;
+    line-height: 2rem;
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   strong {
     color: var(--blueviolet-500);
   }
-  @media (max-width: 1024px) {
-      width: 30rem;
-      height: 30rem;
-      h1{
-          line-height: 2rem;
-          font-weight: 900;
-          font-size: 2rem;
+  span {
+    color: var(--blueviolet-500);
+    font-weight: 700; 
+    font-size: 2rem;
   }
+
+  @media (max-width: ${breakpoints.device.laptop}) {
+    width: 30rem;
+    height: 30rem;   
+  }
+  @media (max-width: ${breakpoints.device.tablet}) {
+    width: 25rem;
+    height: 25rem;
+    font-size: 2rem;
+
     }
-    @media (max-width: 860px) {
-      width: 25rem;
-      height: 25rem;
-      h1{
-          line-height: 1rem;
-          font-weight: 900;
-          font-size: 2rem;
-  }
+    @media (max-width: ${breakpoints.device.mobile}){
+      width: 20rem;
+      h1, span {
+        font-size:  1.6rem;
+      }
     }
 
 `
 export const ContentImg = styled.div`
   img {
-    width: 37rem;
-    height: 37rem;
+    width: 30rem;
+    height: 30rem;
     object-fit: cover;
-
-    @media (max-width: 1024px) {
-      width: 30rem;
-      height: 30rem;
+    @media (max-width: ${breakpoints.device.laptop}) {
+      width: 25rem;
+      height: 25rem;
     }
-    @media (max-width: 860px) {
+    @media (max-width: ${breakpoints.device.tablet}){
       display: none;
     }
   }

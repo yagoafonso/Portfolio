@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "../../breakpoints";
 
 export const ContainerProjects = styled.div`
   background: var(--gray-900);
@@ -25,7 +26,7 @@ export const ContainerProjectCards = styled.div`
   max-width: 1020px;
   margin-top: 50px;
 
-  @media (max-width: 1035px) {
+  @media (max-width: ${breakpoints.device.laptop}) {
       align-items: center ;
       justify-content: center ;
     }

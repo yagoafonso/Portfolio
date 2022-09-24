@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from 'react-router-dom'
+import  breakpoints  from "../../breakpoints";
 
 export const NavbarContainer = styled.nav`
     width: 100%;
@@ -12,7 +13,6 @@ export const NavbarContainer = styled.nav`
     position: sticky;
     z-index: 1;
     border-bottom: 1px solid var(--blueviolet-800);
-
 `;
 
 export const LeftContainer = styled.div`
@@ -20,15 +20,12 @@ export const LeftContainer = styled.div`
     display: flex;
     align-items: center;
     padding-left: 5%;
-
 `;
-
 export const RightContainer = styled.div`
     flex: 30%;
     display: flex;
     justify-content: flex-end;
     padding-right: 50px;
-
 `;
 
 export const NavbarInnerContainer = styled.div`
@@ -54,10 +51,10 @@ export const NavbarLink = styled(Link)`
         color: var(--blueviolet-800);
     }
 
-    @media (max-width: 860px) {
+    @media (max-width: ${breakpoints.device.tablet}) {
     display: none;
     }
-`;
+`
 
 export const NavbarLinkExtend = styled(Link)`
     color: white;
@@ -96,7 +93,7 @@ export const OpensLinksButton = styled.button`
     font-size: 45px;
     cursor: pointer;
 
-    @media (min-width: 860px) {
+    @media (min-width: ${breakpoints.device.tablet}) {
     display: none;
     }
 `;
@@ -105,7 +102,8 @@ export const NavbarExtendContainer = styled.div`
     flex-direction: column;
     align-items: center;
 
-    @media (min-width: 860px) {
+    @media (min-width: ${breakpoints.device.tablet}) {
         display: none;
     }
 `;
+

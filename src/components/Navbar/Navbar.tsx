@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { 
     NavbarContainer,
     LeftContainer, 
@@ -15,8 +15,7 @@ import {
 
 
 export function Navbar() {
-    const [extendNavbar, setExtendNavbar] = useState (false)
-
+    const [extendNavbar, setExtendNavbar] = useState(false)
 
     return(
         <NavbarContainer extendNavbar ={extendNavbar}>
@@ -29,8 +28,8 @@ export function Navbar() {
                         <OpensLinksButton
                             onClick={() => {
                                 setExtendNavbar((curr => !curr));
-                            }}
-                        
+ 
+                            }}                   
                         >                            
                             {extendNavbar ? <> &#10005;</> : <> &#8801;</>}
                         </OpensLinksButton>

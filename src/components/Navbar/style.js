@@ -101,7 +101,6 @@ export const NavbarExtendContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
     @media (min-width: ${breakpoints.device.tablet}) {
         display: none;
     }

@@ -3,6 +3,7 @@ import { ProjectCard } from "../../components/ProjectCard/ProjectCard";
 import  imgProjectFeedback  from "../../assets/projeto_nlw_return.jpg";
 import imgProjectIgniteFeed from "../../assets/ignitefeed.jpg";
 import imgProjectEsports from "../../assets/projeto_nlw_esports.jpg";
+import imgProjectTodoList from "../../assets/todo_list.jpg";
 
 import { 
   ContainerProjects,
@@ -33,9 +34,17 @@ export function Projects(){
         />
         <ProjectCard 
           src={imgProjectEsports}
+          title="Encontre seu duo"
           text="Na 9ª edição do evento NLW na trilha Ignite realizado pela Rocketseat, o projeto foi voltado para o universo dos games. Na aplicação você consegue se cadastrar e ver as pessoas que estão procurando por um duo no game."
           linkGitHub="https://github.com/yagoafonso/nlw_esports"
           linkDemo="https://nlw-esports-nu.vercel.app/"
+        />
+        <ProjectCard 
+          src={imgProjectTodoList}
+          title="Lista de Tarefas"
+          text="Projeto de Todo List, foi desenvolvido para consolidar e aprimorar os conhecimentos sobre React com Typescript e CSS Modules."
+          linkGitHub="https://github.com/yagoafonso/todo-list"
+          linkDemo="https://todo-list-yagoafonso.vercel.app/"
         />
       </ContainerProjectCards>
     </ContainerProjects>

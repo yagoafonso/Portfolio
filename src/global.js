@@ -24,13 +24,13 @@ export default createGlobalStyle `
     box-sizing: border-box;
 }
 body{
-    background: var(--gray-900);
+    background: var(--black-900);
     color: var(--white);
     -webkit-font-smoothing: antialiased;
 }
 body,input, textarea, button{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
     font-size: 1rem;
 }
 `

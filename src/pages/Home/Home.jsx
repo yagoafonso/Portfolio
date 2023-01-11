@@ -12,7 +12,7 @@ export function Home() {
         <ContainerHome>
             <ContentShow>
                 <div>
-                    <h1>Olá, eu sou </h1>
+                    <h1>Olá, eu sou</h1>
                     <h1><strong>Yago Afonso</strong></h1>              
                 </div>
                 <div>

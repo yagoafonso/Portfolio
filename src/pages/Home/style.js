@@ -20,7 +20,6 @@ export const ContentShow = styled.div`
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  background-color: red;
 
   div{
     display: flex;
@@ -29,15 +28,14 @@ export const ContentShow = styled.div`
     gap: 1rem;
   }
   h1{
-    line-height: 2rem;
-    font-weight: 900;
-    font-size: 2.5rem;
+    font-weight: 400;
+    font-size: 2.1rem;
+    line-height: 41px;
   }
   strong {
     color: var(--blueviolet-500);
   }
   span {
-    color: var(--blueviolet-500);
     font-weight: 700; 
     font-size: 2rem;
   }
@@ -61,7 +59,7 @@ export const ContentShow = styled.div`
 
 `
 export const ContentImg = styled.div`
-  background: green;
+
   img {
     width: 25rem;
 

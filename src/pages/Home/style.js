@@ -2,9 +2,8 @@ import styled from 'styled-components';
 import breakpoints  from '../../breakpoints';
 
 export const ContainerHome = styled.section`
-  background: var(--gray-900);
   width: 100%;
-  height: 85vh;
+  height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,13 +13,14 @@ export const ContainerHome = styled.section`
   }
 `
 export const ContentShow = styled.div`
-  width: 35rem;
-  height: 35rem;
+  width: 30rem;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  background-color: red;
 
   div{
     display: flex;
@@ -61,9 +61,10 @@ export const ContentShow = styled.div`
 
 `
 export const ContentImg = styled.div`
+  background: green;
   img {
-    width: 30rem;
-    height: 30rem;
+    width: 25rem;
+
     object-fit: cover;
     @media (max-width: ${breakpoints.device.laptop}) {
       width: 25rem;

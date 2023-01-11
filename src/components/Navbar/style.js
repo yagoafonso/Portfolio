@@ -5,7 +5,7 @@ import  breakpoints  from "../../breakpoints";
 
 export const NavbarContainer = styled.nav`
     width: 100%;
-    height: ${(props) => (props.extendNavbar ? "40vh" : "80px")};
+    height: ${(props) => (props.extendNavbar ? "40vh" : "10vh")};
     display:  flex;
     flex-direction: column;
     top: 0;
@@ -43,13 +43,13 @@ export const RightContainer = styled.div`
 
 export const NavbarInnerContainer = styled.div`
     width: 100%;
-    height: 80px;
+    height: 10vh;
     display: flex;
 `;
 
 export const NavbarLinkContainer = styled.div`
     display: flex;
-    height: 80px;
+    height: 10vh;
     align-items: center;
 `;
 

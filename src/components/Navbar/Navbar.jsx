@@ -1,4 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+
+import { BsFillSunFill } from "react-icons/bs";
+
 import { 
     NavbarContainer,
     LeftContainer, 
@@ -10,6 +13,7 @@ import {
     Logo,
     OpensLinksButton,
     NavbarLinkExtend,
+    ButtonSwitchTheme
 } from './style';
 
 
@@ -21,22 +25,24 @@ export function Navbar() {
         <NavbarContainer extendNavbar ={extendNavbar}>
             <NavbarInnerContainer>
                 <LeftContainer>
-                    <NavbarLinkContainer>
-                        <NavbarLink to="/" >Home</NavbarLink>
-                        <NavbarLink to="/projects" >Projetos</NavbarLink>
-                        <NavbarLink to="/about" >Sobre</NavbarLink>
-                        <OpensLinksButton
-                            onClick={() => {
-                                setExtendNavbar((curr => !curr));
- 
-                            }}                   
-                        >                            
-                            {extendNavbar ? <> &#10005;</> : <> &#8801;</>}
-                        </OpensLinksButton>
-                    </NavbarLinkContainer>
+                    <p><a href="/">Yago Afonso</a></p>
                 </LeftContainer>
                 <RightContainer>
-                    <Logo>&lsaquo;Yago Afonso/&rsaquo;</Logo>
+                    <NavbarLinkContainer>
+                            <NavbarLink to="" >Home</NavbarLink>
+                            <NavbarLink to="/projects" >Projetos</NavbarLink>
+                            <NavbarLink to="/about" >Sobre</NavbarLink>
+                            <ButtonSwitchTheme><BsFillSunFill /></ButtonSwitchTheme>
+                            
+                            <OpensLinksButton
+                                onClick={() => {
+                                    setExtendNavbar((curr => !curr));
+    
+                                }}                   
+                            >                            
+                                {extendNavbar ? <> &#10005;</> : <> &#8801;</>}
+                            </OpensLinksButton>
+                        </NavbarLinkContainer>                    
                 </RightContainer>
             </NavbarInnerContainer>
             { extendNavbar && (
@@ -44,6 +50,7 @@ export function Navbar() {
                     <NavbarLinkExtend to="/">Home</NavbarLinkExtend>
                     <NavbarLinkExtend to="/projects" >Projetos</NavbarLinkExtend>
                     <NavbarLinkExtend to="/about" >Sobre</NavbarLinkExtend>
+                    
                 </NavbarExtendContainer>
             )}
         </NavbarContainer>

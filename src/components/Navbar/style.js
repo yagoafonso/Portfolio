@@ -6,7 +6,6 @@ import  breakpoints  from "../../breakpoints";
 export const NavbarContainer = styled.nav`
     width: 100%;
     height: ${(props) => (props.extendNavbar ? "40vh" : "80px")};
-    background-color: var(--gray-900);
     display:  flex;
     flex-direction: column;
     top: 0;
@@ -20,12 +19,26 @@ export const LeftContainer = styled.div`
     display: flex;
     align-items: center;
     padding-left: 5%;
+
+    a{
+        text-decoration: none;
+
+        color: var(--white);
+
+        font-weight: 400;
+        line-height: 24px;
+
+        :hover{
+            color: var(--blueviolet-800);
+            transition: 0.3s;
+        }
+    }    
 `;
 export const RightContainer = styled.div`
     flex: 30%;
     display: flex;
     justify-content: flex-end;
-    padding-right: 50px;
+    padding-right: 5%;
 `;
 
 export const NavbarInnerContainer = styled.div`
@@ -36,13 +49,12 @@ export const NavbarInnerContainer = styled.div`
 
 export const NavbarLinkContainer = styled.div`
     display: flex;
+    height: 80px;
+    align-items: center;
 `;
 
 export const NavbarLink = styled(Link)`
     color: white;
-    font-size: 1.25rem;
-    font-weight: 700;
-    font-family: Roboto, Helvetica, sans-serif;
     text-decoration: none;
     margin: 10px;
     transition: 0.2s;
@@ -59,8 +71,6 @@ export const NavbarLink = styled(Link)`
 export const NavbarLinkExtend = styled(Link)`
     color: white;
     font-size: 1.5rem;
-    font-weight: 700;
-    font-family: Roboto, Helvetica, sans-serif;
     text-decoration: none;
     margin: 10px;
 
@@ -72,7 +82,6 @@ export const NavbarLinkExtend = styled(Link)`
 export const Logo = styled.div`
     color: white;
     font-size: 1.5rem;
-    font-family: Roboto, Helvetica, sans-serif;
     margin: 25px;
     max-width: 180px;
     height: auto;
@@ -105,4 +114,13 @@ export const NavbarExtendContainer = styled.div`
         display: none;
     }
 `;
+export const ButtonSwitchTheme = styled.div`
+    display: flex;
+    margin: 10px;
 
+    :hover{
+        color: var(--blueviolet-800);
+        transition: 0.3s;
+        cursor: pointer;
+    }
+`

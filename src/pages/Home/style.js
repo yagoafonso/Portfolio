@@ -3,7 +3,7 @@ import breakpoints  from '../../breakpoints';
 
 export const ContainerHome = styled.section`
   width: 100%;
-  height: 75vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,8 +18,9 @@ export const ContentShow = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
+
 
   div{
     display: flex;
@@ -36,8 +37,9 @@ export const ContentShow = styled.div`
     color: var(--blueviolet-500);
   }
   span {
-    font-weight: 700; 
+    font-weight: 400;
     font-size: 2rem;
+    line-height: 36px;
   }
 
   @media (max-width: ${breakpoints.device.laptop}) {
@@ -62,6 +64,7 @@ export const ContentImg = styled.div`
 
   img {
     width: 25rem;
+  
 
     object-fit: cover;
     @media (max-width: ${breakpoints.device.laptop}) {

@@ -20,9 +20,10 @@ export function Home() {
                         <Typewriter
                             words={['Desenvolvedor Front-End.']}
                             cursor
+                            loop={1}
                             cursorStyle='|'
                             typeSpeed={100}
-                            deleteSpeed={50}
+                            deleteSpeed={10}
                             delaySpeed={100}                
                         />
                     </span>

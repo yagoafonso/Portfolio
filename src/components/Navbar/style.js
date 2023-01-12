@@ -11,7 +11,6 @@ export const NavbarContainer = styled.nav`
     top: 0;
     position: sticky;
     z-index: 1;
-    border-bottom: 1px solid var(--blueviolet-800);
 `;
 
 export const LeftContainer = styled.div`

@@ -15,20 +15,22 @@ export function About(){
   return(
     <ContainerAbout>
       <ContentImgAbout>
-        <img src="https://github.com/yagoafonso.png" alt="" />
+        <img src="https://github.com/yagoafonso.png" alt="Imagem de perfil" />
       </ContentImgAbout>
       <ContentTextAbout>
-        <h1>Deixa eu me <span>Apresentar</span></h1>
-        <p>Olá! sou graduado em Sistemas de Informação pela Universidade Federal de Rondonópolis/MT. Atuo há 5 anos como analista de suporte, mas atualmente estou em transição de área com foco para atuar como desenvolvedor front-end. A minha área de interesse está na construção de novas <strong>Tecnologias e Produtos Web</strong>  utilizando <strong>Node.js</strong> e <strong>React.Js</strong>.</p>
+        <p>Olá! sou graduado em Sistemas de Informações pela Universidade Federal de Rondonópolis. Recentemente iniciei uma pós-graduação em Projetos de Aplicativos Móveis Multiplataforma.</p>
+        <p>Estou em busca da minha primeira oportunidade como desenvolvedor front-end.</p>
+        <p>A minha área de interesse está na construção de novas Tecnologias e Produtos Web utilizando <strong>React</strong>, <strong>React Native</strong> e <strong>Node.js</strong>.</p>
         <ContainerSocial>
-          <h2>Me encontre em</h2>
           <p>Sinta-se à vontade para se conectar comigo.</p>
           <ContainerSocialIcon>
-            <SocialIcon title="Github" href="https://github.com/yagoafonso" target="_blank">
-              <AiFillGithub />         
-            </SocialIcon>
             <SocialIcon title="Linkedin" href="https://www.linkedin.com/in/yago-afonso/" target="_blank">
-              <FaLinkedinIn />        
+              <FaLinkedinIn />
+              Linkedin        
+            </SocialIcon>
+            <SocialIcon title="Github" href="https://github.com/yagoafonso" target="_blank">
+              <AiFillGithub />
+              GitHub         
             </SocialIcon>
           </ContainerSocialIcon>          
         </ContainerSocial>

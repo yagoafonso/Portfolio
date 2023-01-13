@@ -4,12 +4,8 @@ export const ContainerFooter = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 120px;
   height: 10vh;
   padding: 20px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
   p{
     text-align: center;
     white-space: nowrap;

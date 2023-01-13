@@ -2,12 +2,11 @@ import styled from 'styled-components'
 import breakpoints from '../../breakpoints'
 
 export const ContainerAbout = styled.section`
-  background: var(--gray-900);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5rem;
-  height: 86.5vh;
+  height: 80vh;
   gap: 30px;
   @media (max-width: ${breakpoints.device.tablet}) {
     flex-direction: column;
@@ -26,22 +25,14 @@ export const ContentImgAbout = styled.div`
   }
 `
 export const ContentTextAbout = styled.div`
-  width: 20rem;
+  width: 41rem;
   height: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 20px;
-  h1{
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 2rem;
-    span{
-      color: var(--blueviolet-300);
-    }
-  }
+  
   p{
     text-align: justify;
     line-height: 1.5rem;
@@ -56,13 +47,6 @@ export const ContentTextAbout = styled.div`
 
 export const ContainerSocial = styled.div`
   padding: 20px;
-  h2{
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    @media (max-width: ${breakpoints.device.tablet}) {
-      text-align: center;
-    }
-  }
   p{
     text-align: center;
 
@@ -75,22 +59,26 @@ export const ContainerSocialIcon = styled.div`
   gap: 10px;
 `
 export const SocialIcon = styled.a`
-  width: 40px;
-  height: 40px;
-  display: flex;
+  width: 210px;
+  height: 50px;
   margin-top: 15px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
-  background: var(--white);
+  gap: 8px;
+  border-radius: 10px;
+  border: 1px solid var(--gray-300);
   cursor: pointer;
+  text-decoration: none;
+  color: white;
   svg{
     width: 25px;
     height: 25px;
-    color:var(--blueviolet-800);
+    color:var(--white);
+    
   }
   :hover {
-  color: #87209e;
-  box-shadow: 0 0 10px var(--blueviolet-800);
+    background-color: var(--blueviolet-800);
+    transition: 0.2s;
   }
 `

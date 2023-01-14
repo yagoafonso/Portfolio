@@ -1,11 +1,15 @@
 import styled from 'styled-components'
+import  breakpoints  from "../../breakpoints";
 
 export const ContainerFooter = styled.footer`
+  width: 100vw;
+  max-width: ${breakpoints.device.laptop};
+
+  height: 10vh;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 10vh;
-  padding: 20px;
   p{
     text-align: center;
     white-space: nowrap;

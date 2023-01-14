@@ -27,6 +27,10 @@ body{
     background: var(--black-900);
     color: var(--white);
     -webkit-font-smoothing: antialiased;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 body,input, textarea, button{
     font-family: 'Inter', sans-serif;

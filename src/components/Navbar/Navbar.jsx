@@ -10,7 +10,6 @@ import {
     NavbarInnerContainer, 
     NavbarLinkContainer,
     NavbarLink,
-    Logo,
     OpensLinksButton,
     NavbarLinkExtend,
     ButtonSwitchTheme

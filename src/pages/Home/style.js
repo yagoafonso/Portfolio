@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import breakpoints  from '../../breakpoints';
 
 export const ContainerHome = styled.section`
-  width: 100%;
+  width: 100vw;
+  max-width: ${breakpoints.device.laptop};
   height: 80vh;
   display: flex;
   align-items: center;

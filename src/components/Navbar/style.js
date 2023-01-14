@@ -15,6 +15,7 @@ export const NavbarContainer = styled.nav`
         height: 10vh;
     }
 `;
+
 export const LeftContainer = styled.div`
     display: flex;
     align-items: center;
@@ -71,19 +72,23 @@ export const NavbarLinkExtend = styled(Link)`
     text-decoration: none;
     margin: 10px;
 
+    display: flex;
+    align-items: center;
+
     :hover {
         color: var(--blueviolet-800);
     }
 `;
 
 export const OpensLinksButton = styled.button`
-    width: 80px;
+    width: 100px;
     height: 50px;
     background: none;
     border: none;
     color: white;
-    font-size: 45px;
+    font-size: 50px;
     cursor: pointer;
+    top: 0;
 
     @media (min-width: ${breakpoints.device.tablet}) {
     display: none;

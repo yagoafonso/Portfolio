@@ -1,32 +1,41 @@
 import React from "react";
-import { AiFillGithub } from "react-icons/ai";
-import { CgWebsite } from "react-icons/cg";
+import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 
 import { 
   ContainerProjectCard,
   CardImg,
   CardTitle,
-  CardText,
+  ContainerDescriptionProject,
+  DescriptionTecnologiesUsed,
+  DescriptionProject,
   ContainerLinks,
+  ContainerHead,
   ContainerButton
 } from './style';
 
-export function ProjectCard({src, title, text, linkGitHub, linkDemo}){
+export function ProjectCard({src, titleProject, linkToGitHub, linkToViewProject, descriptionTecnologiesUsed, descriptionProject}){
   return(
     <ContainerProjectCard>
       <CardImg src={src} alt="" />
-      <CardTitle>{title}</CardTitle>
-      <CardText>{text}</CardText>
-      <ContainerLinks>
-        <ContainerButton href={linkGitHub} target="_blank" title="Link para ver o repositório no GitHub">
+      <ContainerHead>
+        <CardTitle>{titleProject}</CardTitle>
+        <ContainerLinks>
+        <ContainerButton href={linkToGitHub} target="_blank" title="Link para ver o repositório no GitHub">
             <AiFillGithub />
-            GitHub
         </ContainerButton>
-        <ContainerButton href={linkDemo} target="_blank" title="Link de apresentação do projeto">
-            <CgWebsite />
-            Demo
+        <ContainerButton href={linkToViewProject} target="_blank" title="Link de apresentação do projeto">
+            <AiOutlineLink />
         </ContainerButton  >
       </ContainerLinks>
+      </ContainerHead>      
+      <ContainerDescriptionProject>
+        <DescriptionProject>
+          {descriptionProject}
+        </DescriptionProject>
+        <DescriptionTecnologiesUsed>
+          {descriptionTecnologiesUsed}
+        </DescriptionTecnologiesUsed>
+      </ContainerDescriptionProject>
     </ContainerProjectCard>
   );
 }

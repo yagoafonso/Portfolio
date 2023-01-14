@@ -8,43 +8,45 @@ import imgProjectTodoList from "../../assets/todo_list.jpg";
 import { 
   ContainerProjects,
   ContainerProjectCards,
-  ProjectTitle,
-  ContainerText
+  ProjectTitle
 } from './style'
 
 export function Projects(){
   return(
     <ContainerProjects>
-      <ProjectTitle>Projetos</ProjectTitle>
-      <ContainerText>Aqui estão alguns projetos que trabalhei recentemente:</ContainerText>
+      <ProjectTitle>Projetos em destaque</ProjectTitle>
       <ContainerProjectCards>
-        <ProjectCard
-          src={imgProjectFeedback}
-          title="Feedback"
-          text="Durante a 8º edição do evento NLW na trilha Impulse realizado pela Rocketseat, foi desenvolvida um widget completo e acessível que pode ser utilizado em múltiplos projetos para coletar feedbacks dos usuários."
-          linkGitHub="https://github.com/yagoafonso/nlw_return_impulse"
-          linkDemo="https://nlw-return-impulse-pink-two.vercel.app/"
+        <ProjectCard 
+          src={imgProjectTodoList}
+          titleProject="Lista de Tarefas"
+          descriptionProject="Aplicação para listar todas as tarefas que você precisar executar. Você pode criar novas tarefas, marcar com concluídas e remover caso necessário."
+          linkGitHub="https://github.com/yagoafonso/todo-list"
+          linkDemo="https://todo-list-yagoafonso.vercel.app/"
+          descriptionTecnologiesUsed="React - typescript - CSS Modules"
         />
         <ProjectCard
           src={imgProjectIgniteFeed}
-          title="Ignite Feed"
-          text="Projeto desenvolvido durante o primeiro módulo do Ignite - Trilha ReactJs oferecido pela Rocketset."
-          linkGitHub="https://github.com/yagoafonso/ignite-feed"
-          linkDemo="https://ignitefeed-xi.vercel.app/"
+          titleProject="Ignite Feed"
+          descriptionProject="Feed de publicações de uma rede social, nela você consegue comentar e curtir as postagens."
+          linkToGitHub="https://github.com/yagoafonso/ignite-feed"
+          linkToViewProject="https://ignitefeed-xi.vercel.app/"
+          descriptionTecnologiesUsed="React - typescript - CSS Modules"
         />
         <ProjectCard 
           src={imgProjectEsports}
-          title="Encontre seu duo"
-          text="Na 9ª edição do evento NLW na trilha Ignite realizado pela Rocketseat, o projeto foi voltado para o universo dos games. Na aplicação você consegue se cadastrar e ver as pessoas que estão procurando por um duo no game."
-          linkGitHub="https://github.com/yagoafonso/nlw_esports"
-          linkDemo="https://nlw-esports-nu.vercel.app/"
+          titleProject="Encontre seu duo"
+          descriptionProject="Aplicação ajudar você a encontrar seu duo. Nela você consegue se cadastrar e ver pessoas que estão procurando por duo no game."
+          linkToGitHub="https://github.com/yagoafonso/nlw_esports"
+          linkToViewProject="https://nlw-esports-nu.vercel.app/"
+          descriptionTecnologiesUsed="React - Typescript - Tailwind Css - Node.JS"
         />
-        <ProjectCard 
-          src={imgProjectTodoList}
-          title="Lista de Tarefas"
-          text="Projeto de Todo List, foi desenvolvido para consolidar e aprimorar os conhecimentos sobre React com Typescript e CSS Modules."
-          linkGitHub="https://github.com/yagoafonso/todo-list"
-          linkDemo="https://todo-list-yagoafonso.vercel.app/"
+        <ProjectCard
+          src={imgProjectFeedback}
+          titleProject="Feedback"
+          descriptionProject="Aplicação de um widget completo e acessível que pode ser utilizado em múltiplos projetos para coletar feedbacks dos usuários."
+          linkToGitHub="https://github.com/yagoafonso/nlw_return_impulse"
+          linkToViewProject="https://nlw-return-impulse-pink-two.vercel.app/"
+          descriptionTecnologiesUsed="React - Typescript - Tailwind CSS"
         />
       </ContainerProjectCards>
     </ContainerProjects>

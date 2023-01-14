@@ -10,7 +10,8 @@ export const NavbarContainer = styled.nav`
     flex-direction: column;
     top: 0;
     position: sticky;
-    z-index: 1;
+    z-index: 9999;
+    background-color: var(--black-900);
 `;
 
 export const LeftContainer = styled.div`

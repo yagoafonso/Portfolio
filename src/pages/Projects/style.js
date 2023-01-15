@@ -3,6 +3,8 @@ import breakpoints from "../../breakpoints";
 
 export const ContainerProjects = styled.div`
   display: flex;
+  width: 100vw;
+  max-width: ${breakpoints.device.laptop};
   flex-direction: column;
   align-items: center;
   padding-top: 30px;

@@ -2,18 +2,16 @@ import styled from 'styled-components'
 import breakpoints from '../../breakpoints'
 
 export const ContainerAbout = styled.section`
+  width: 100vw;
+  max-width: ${breakpoints.device.laptop};
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5rem;
-  height: 80vh;
   gap: 30px;
   @media (max-width: ${breakpoints.device.tablet}) {
     flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 30px;
-    height: 95vh;
-    padding: 0;
+    width: 100vw;
   }
 `
 export const ContentImgAbout = styled.div`
@@ -42,6 +40,8 @@ export const ContentTextAbout = styled.div`
   }
   @media (max-width: ${breakpoints.device.tablet}) {
     align-items: center;
+    justify-content: center;
+    width: 100vw;
   }
 `
 
@@ -49,7 +49,6 @@ export const ContainerSocial = styled.div`
   padding: 20px;
   p{
     text-align: center;
-
   }
 `
 export const ContainerSocialIcon = styled.div`

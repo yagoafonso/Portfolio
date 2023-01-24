@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 
-import { BsFillSunFill } from "react-icons/bs";
+import { AiFillHome,AiOutlineFundProjectionScreen,AiOutlineUser } from "react-icons/ai";
 
 import { 
-    NavbarContainer,
-    LeftContainer, 
-    RightContainer, 
+    Container,
+    Content, 
+    Logo, 
     NavbarExtendContainer, 
-    NavbarInnerContainer, 
-    NavbarLinkContainer,
+    NavbarContainer,
     NavbarLink,
     OpensLinksButton,
     NavbarLinkExtend,
-    ButtonSwitchTheme
 } from './style';
 
 
@@ -20,38 +18,31 @@ import {
 export function Navbar() {
     const [extendNavbar, setExtendNavbar] = useState(false)
 
+    const showSidebar = () => setExtendNavbar(!extendNavbar)
+
     return(
-        <NavbarContainer extendNavbar ={extendNavbar}>
-            <NavbarInnerContainer>
-                <LeftContainer>
-                    <p><a href="/">Yago Afonso</a></p>
-                </LeftContainer>
-                <RightContainer>
-                    <NavbarLinkContainer>
-                            <NavbarLink to="" >Home</NavbarLink>
-                            <NavbarLink to="/projects" >Projetos</NavbarLink>
-                            <NavbarLink to="/about" >Sobre</NavbarLink>
-                            <ButtonSwitchTheme><BsFillSunFill /></ButtonSwitchTheme>
-                            
-                            <OpensLinksButton
-                                onClick={() => {
-                                    setExtendNavbar((curr => !curr));
-    
-                                }}                   
-                            >                            
-                                {extendNavbar ? <> &#10005;</> : <> &#8801;</>}
-                            </OpensLinksButton>
-                        </NavbarLinkContainer>                    
-                </RightContainer>
-            </NavbarInnerContainer>
-            { extendNavbar && (
+        <Container extendNavbar={extendNavbar}>
+            <Content>
+                <Logo>
+                    <a href="/">Yago Afonso</a>
+                </Logo>
+                <NavbarContainer>
+                    <NavbarLink to="" ><AiFillHome /> Home </NavbarLink>
+                    <NavbarLink to="/projects" ><AiOutlineFundProjectionScreen /> Projetos </NavbarLink>
+                    <NavbarLink to="/about" ><AiOutlineUser /> Sobre </NavbarLink>
+
+                    <OpensLinksButton onClick={showSidebar}>
+                        {extendNavbar ? <> &#10005;</> : <> &#8801;</>}
+                    </OpensLinksButton>
+                </NavbarContainer>
+            </Content>
+            {extendNavbar && (
                 <NavbarExtendContainer>
-                    <NavbarLinkExtend to="/">Home</NavbarLinkExtend>
-                    <NavbarLinkExtend to="/projects" >Projetos</NavbarLinkExtend>
-                    <NavbarLinkExtend to="/about" >Sobre</NavbarLinkExtend>
-                    
+                    <NavbarLinkExtend to="/"><AiFillHome /> Home </NavbarLinkExtend>
+                    <NavbarLinkExtend to="/projects" ><AiOutlineFundProjectionScreen /> Projetos </NavbarLinkExtend>
+                    <NavbarLinkExtend to="/about" ><AiOutlineUser /> Sobre </NavbarLinkExtend>
                 </NavbarExtendContainer>
             )}
-        </NavbarContainer>
+        </Container>
     );
 }

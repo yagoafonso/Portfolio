@@ -2,63 +2,60 @@ import styled from "styled-components";
 import { Link } from 'react-router-dom'
 import  breakpoints  from "../../breakpoints";
 
-export const NavbarContainer = styled.nav`
-    width: 100vw;
+export const Container = styled.nav`
     max-width: ${breakpoints.device.laptop};
-    height: ${(props) => (props.extendNavbar ? "40vh" : "10vh")};
     display: flex;
-    flex-direction: column;
-    top: 0;
-    background-color: var(--black-900);
+    border-bottom: 1px solid red;
 
-    @media (min-width: ${breakpoints.device.tablet} ){
-        height: 10vh;
+    @media (max-width: ${breakpoints.device.tablet}) {
+        flex-direction: column;
     }
 `;
 
-export const LeftContainer = styled.div`
+export const Content = styled.div`
+    width: 100%;
+    height: 10vh;
     display: flex;
-    align-items: center;
-    padding-left: 5%;
+    justify-content: space-between;
+    padding: 0 20px;
+`;
+
+export const Logo = styled.div`
+    padding: 25px 0;
     a{
-        text-decoration: none;
         color: var(--white);
+        text-decoration: none;        
+        font-size: 1.25rem;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 1.5rem;
 
         :hover{
             color: var(--blueviolet-800);
             transition: 0.3s;
         }
-    }    
-`;
-export const RightContainer = styled.div`
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 5%;
+    }  
 `;
 
-export const NavbarInnerContainer = styled.div`
-    width: 100%;
-    height: 10vh;
+export const NavbarContainer = styled.div`
     display: flex;
-    justify-content: space-between;
-`;
-
-export const NavbarLinkContainer = styled.div`
-    display: flex;
-    height: 10vh;
     align-items: center;
 `;
 
 export const NavbarLink = styled(Link)`
+    display: flex;
+    gap: 5px;
+    margin: 10px;
+
     color: white;
     text-decoration: none;
-    margin: 10px;
-    transition: 0.2s;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5rem;
 
     :hover {
         color: var(--blueviolet-800);
+        transition: 0.3s;
     }
 
     @media (max-width: ${breakpoints.device.tablet}) {
@@ -67,13 +64,14 @@ export const NavbarLink = styled(Link)`
 `
 
 export const NavbarLinkExtend = styled(Link)`
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
     color: white;
     font-size: 1.5rem;
     text-decoration: none;
     margin: 10px;
-
-    display: flex;
-    align-items: center;
 
     :hover {
         color: var(--blueviolet-800);
@@ -81,7 +79,7 @@ export const NavbarLinkExtend = styled(Link)`
 `;
 
 export const OpensLinksButton = styled.button`
-    width: 100px;
+    width: 50px;
     height: 50px;
     background: none;
     border: none;
@@ -98,18 +96,10 @@ export const NavbarExtendContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 
     @media (min-width: ${breakpoints.device.tablet}) {
         display: none;
     }
 `;
-export const ButtonSwitchTheme = styled.div`
-    display: flex;
-    margin: 10px;
 
-    :hover{
-        color: var(--blueviolet-800);
-        transition: 0.3s;
-        cursor: pointer;
-    }
-`

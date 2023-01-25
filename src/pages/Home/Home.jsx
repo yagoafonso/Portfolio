@@ -2,21 +2,25 @@ import React from "react";
 import { Typewriter } from 'react-simple-typewriter'
 import  homeLogo  from "../../assets/avatar_home.svg"
 import { 
-    ContainerHome,
-    ContentShow,
-    ContentImg
+    Container,
+    ContentInfo,
+    ContentImg,
+    Developer,
+    Intro,
+    Img,
+    Name,
+    Span
 } from './style';
 export function Home() {
 
     return (
-        <ContainerHome>
-            <ContentShow>
-                <div>
-                    <h1>Olá, eu sou</h1>
-                    <h1><strong>Yago Afonso</strong></h1>              
-                </div>
-                <div>
-                    <span>
+        <Container>
+            <ContentInfo>
+                <Intro>
+                    <Span>Olá, eu sou</Span>
+                    <Name>Yago Afonso</Name>              
+                </Intro>
+                    <Developer>
                         <Typewriter
                             words={['Desenvolvedor Front-End.']}
                             cursor
@@ -26,12 +30,11 @@ export function Home() {
                             deleteSpeed={10}
                             delaySpeed={100}                
                         />
-                    </span>
-                </div>
-            </ContentShow>
+                    </Developer>
+            </ContentInfo>
             <ContentImg>
-                <img src={homeLogo} alt="Imagem pessoa sentada em frente ao computador." />
+                <Img src={homeLogo} alt="Imagem pessoa sentada em frente ao computador." />
             </ContentImg>
-        </ContainerHome>
+        </Container>
     );
 }

@@ -2,24 +2,33 @@ import styled from 'styled-components'
 import  breakpoints  from "../../breakpoints";
 
 export const ContainerFooter = styled.footer`
-  width: 100vw;
   max-width: ${breakpoints.device.laptop};
   height: 10vh;
   padding: 20px;
   display: flex;
   align-items: center;
+
   justify-content: space-between;
-  p{
-    text-align: center;
-    white-space: nowrap;
+
+  @media (max-width: ${breakpoints.device.mobile}) {
+    height: 15vh;
   }
+
   @media (max-width: ${breakpoints.device.tablet}) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
   }
+`
+
+  export const Developed = styled.p`
+    text-align: center;
+    white-space: nowrap;
   `
+
+  export const Copyright = styled.p``
+
   export const ContainerButton = styled.div`
     display: flex;
     justify-content: flex-end;
@@ -38,5 +47,4 @@ export const ContainerFooter = styled.footer`
       width: 20px;
       height: 20px;
     }
-
   `

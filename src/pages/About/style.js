@@ -2,29 +2,43 @@ import styled from 'styled-components'
 import breakpoints from '../../breakpoints'
 
 export const ContainerAbout = styled.section`
-  width: 100vw;
   max-width: ${breakpoints.device.laptop};
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem;
   gap: 30px;
+
   @media (max-width: ${breakpoints.device.tablet}) {
     flex-direction: column;
-    width: 100vw;
+    gap: 10px;
   }
 `
 export const ContentImgAbout = styled.div`
-  img{
-    width: 20rem;
-    height: 20rem;
-    border-radius: 10px;
-    box-shadow: -4px 4px black;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+`
+export const Img = styled.img`
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+
+  @media (max-width: ${breakpoints.device.mobile}) {
+    width: 100%;
+    height: 100%;
+  }
+  @media (max-width: ${breakpoints.device.tablet}) {
+    width: 90%;
+    height: 90%;
   }
 `
+
 export const ContentTextAbout = styled.div`
-  width: 41rem;
-  height: 20rem;
+  width: 50%;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -39,9 +53,10 @@ export const ContentTextAbout = styled.div`
     }
   }
   @media (max-width: ${breakpoints.device.tablet}) {
+    height: auto;
     align-items: center;
-    justify-content: center;
-    width: 100vw;
+    justify-content: center;  
+    width: 70%;
   }
 `
 
@@ -58,7 +73,7 @@ export const ContainerSocialIcon = styled.div`
   gap: 10px;
 `
 export const SocialIcon = styled.a`
-  width: 210px;
+  width: 50%;
   height: 50px;
   margin-top: 15px;
   display: flex;
@@ -73,9 +88,9 @@ export const SocialIcon = styled.a`
   svg{
     width: 25px;
     height: 25px;
-    color:var(--white);
-    
+    color:var(--white);    
   }
+
   :hover {
     background-color: var(--blueviolet-800);
     transition: 0.2s;

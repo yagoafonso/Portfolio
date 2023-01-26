@@ -5,6 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import {
   ContainerAbout,
   ContentImgAbout,
+  Img,
   ContentTextAbout,
   ContainerSocial,
   ContainerSocialIcon,
@@ -15,7 +16,7 @@ export function About(){
   return(
     <ContainerAbout>
       <ContentImgAbout>
-        <img src="https://github.com/yagoafonso.png" alt="Imagem de perfil" />
+        <Img src="https://github.com/yagoafonso.png" alt="Imagem de perfil" />
       </ContentImgAbout>
       <ContentTextAbout>
         <p>Olá! sou graduado em Sistemas de Informações pela Universidade Federal de Rondonópolis. Recentemente iniciei uma pós-graduação em Projetos de Aplicativos Móveis Multiplataforma.</p>
@@ -35,7 +36,6 @@ export function About(){
           </ContainerSocialIcon>          
         </ContainerSocial>
       </ContentTextAbout>
-
     </ContainerAbout>
   );
 }

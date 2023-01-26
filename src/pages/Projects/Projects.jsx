@@ -5,11 +5,7 @@ import imgProjectIgniteFeed from "../../assets/ignitefeed.jpg";
 import imgProjectEsports from "../../assets/projeto_nlw_esports.jpg";
 import imgProjectTodoList from "../../assets/todo_list.jpg";
 
-import { 
-  ContainerProjects,
-  ContainerProjectCards,
-  ProjectTitle
-} from './style'
+import { ContainerProjects, ContainerProjectCards, ProjectTitle } from './style'
 
 export function Projects(){
   return(

@@ -31,10 +31,21 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 body,input, textarea, button{
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 1rem;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 5px;
+    background-color: var(--gray-300); 
+  }
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--blueviolet-800); 
+  }
 `

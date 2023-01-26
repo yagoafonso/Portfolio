@@ -5,6 +5,8 @@ import  breakpoints  from "../../breakpoints";
 export const Container = styled.nav`
     max-width: ${breakpoints.device.laptop};
     display: flex;
+    align-items: center;
+    justify-content: center;
 
     @media (max-width: ${breakpoints.device.tablet}) {
         flex-direction: column;

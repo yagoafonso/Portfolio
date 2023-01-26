@@ -15,6 +15,11 @@ export const CardImg = styled.img`
   height: 17.5rem;
   object-fit: cover;
   border-radius: 4px;
+
+  @media (max-width: ${breakpoints.device.mobile}) {
+    width: 15rem;
+    height: 12rem;
+  }
 `
 export const ContainerHead = styled.div`
   display: flex;

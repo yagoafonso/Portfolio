@@ -94,7 +94,11 @@ export const SocialIcon = styled.a`
   svg{
     width: 25px;
     height: 25px;
-    color:var(--white);    
+    color:var(--white);
+    
+    @media (max-width: ${breakpoints.device.mobile}) {
+      display: none;
+  }
   }
 
   :hover {

@@ -1,6 +1,9 @@
 import React from "react";
+
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+
+import  AboutImg  from "../../assets/about.png"
 
 import {
   ContainerAbout,
@@ -15,9 +18,6 @@ import {
 export function About(){
   return(
     <ContainerAbout>
-      <ContentImgAbout>
-        <Img src="https://github.com/yagoafonso.png" alt="Imagem de perfil" />
-      </ContentImgAbout>
       <ContentTextAbout>
         <p>Olá! sou graduado em Sistemas de Informações pela Universidade Federal de Rondonópolis. Recentemente iniciei uma pós-graduação em Projetos de Aplicativos Móveis Multiplataforma.</p>
         <p>Estou em busca da minha primeira oportunidade como desenvolvedor front-end.</p>
@@ -27,15 +27,18 @@ export function About(){
           <ContainerSocialIcon>
             <SocialIcon title="Linkedin" href="https://www.linkedin.com/in/yago-afonso/" target="_blank">
               <FaLinkedinIn />
-              Linkedin        
+              Linkedin
             </SocialIcon>
             <SocialIcon title="Github" href="https://github.com/yagoafonso" target="_blank">
               <AiFillGithub />
-              GitHub         
+              GitHub
             </SocialIcon>
-          </ContainerSocialIcon>          
+          </ContainerSocialIcon>
         </ContainerSocial>
       </ContentTextAbout>
+      <ContentImgAbout>
+        <Img src={AboutImg} alt="Imagem de perfil" />
+      </ContentImgAbout>
     </ContainerAbout>
   );
 }

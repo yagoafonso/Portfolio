@@ -7,10 +7,16 @@ export const ContainerAbout = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  /* gap: 30px; */
+
+  @media (max-width: ${breakpoints.device.mobile}) {
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
 
   @media (max-width: ${breakpoints.device.tablet}) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 10px;
   }
 `
@@ -22,8 +28,8 @@ export const ContentImgAbout = styled.div`
   padding: 0 20px;
 `
 export const Img = styled.img`
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
 
   @media (max-width: ${breakpoints.device.mobile}) {
@@ -31,8 +37,8 @@ export const Img = styled.img`
     height: 100%;
   }
   @media (max-width: ${breakpoints.device.tablet}) {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
   }
 `
 

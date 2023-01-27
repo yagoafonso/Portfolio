@@ -16,8 +16,8 @@ export function Projects(){
           src={imgProjectTodoList}
           titleProject="Lista de Tarefas"
           descriptionProject="Aplicação para listar todas as tarefas que você precisar executar. Você pode criar novas tarefas, marcar com concluídas e remover caso necessário."
-          linkGitHub="https://github.com/yagoafonso/todo-list"
-          linkDemo="https://todo-list-yagoafonso.vercel.app/"
+          linkToGitHub="https://github.com/yagoafonso/todo-list"
+          linkToViewProject="https://todo-list-yagoafonso.vercel.app/"
           descriptionTecnologiesUsed="React - typescript - CSS Modules"
         />
         <ProjectCard
